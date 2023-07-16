@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #fff;
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Inter', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+    height: 110px;
+    /* background-color: #CABDB4; */
+}
+
+.header_left {
+    clip-path: polygon(0 0, 100% 0%, 97% 100%, 0 100%);
+    background-color: #CABDB4;
+}
+
+.header_right {
+    clip-path: polygon(6% 0, 100% 0, 100% 100%, 0 100%);
+    background-color: #CABDB4;
+}
+
+.zakaat_form_text {
+    background-color: #801849;
+    color: #fff;
+    padding-left: 20px;
+    line-height: 60px;
+    border-bottom-right-radius: 50px;
+    font-weight: 600;
+    font-size: 36px;
+    width: 290px;
+    height: 55px;
+}
+
+.inputs input {
+    width: 30px;
+    height: 30px
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0
+}
+
+.text-sm {
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #000;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    background: #C6A15A;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.border-b {
+    height: 4px;
+    width: 50px !important;
+    background-color: #F2B950;
+}
+
+.footer {
+    height: 60px;
+    ;
+}
+
+.footer_left {
+    clip-path: polygon(0 0, 100% 0%, 97% 100%, 0 100%);
+    background-color: #801849;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_text {
+    color: #fff;
+    letter-spacing: 5px;
+}
+
+.footer_right {
+    clip-path: polygon(6% 0, 100% 0, 100% 100%, 0 100%);
+    background-color: #CABDB4;
+}

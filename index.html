@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="container header">
+        <div class="row">
+            <div class="col-8 header_left ps-0 pe-5">
+                <div class="">
+                    <h1 class="zakaat_form_text m-0">Zakaat Form</h1>
+                </div>
+                <div class="d-flex justify-content-end align-items-start gap-3">
+                    <span class="text-sm">Dossiernummer: </span>
+                    <div id="otp" class="inputs d-flex flex-row justify-content-end">
+                        <div class="d-flex flex-column justify-content-center align-items-center me-2">
+                            <input class="text-center form-control rounded-0" type="text" id="first" maxlength="1" />
+                            <span class="text-sm">Y</span>
+                        </div>
+                        <div class="d-flex flex-column justify-content-center align-items-center me-2">
+                            <input class="text-center form-control rounded-0" type="text" id="second" maxlength="1" />
+                            <span class="text-sm">Y</span>
+                        </div>
+                        <div class="d-flex flex-column justify-content-center align-items-center me-2">
+                            <input class="text-center form-control rounded-0" type="text" id="third" maxlength="1" />
+                            <span class="text-sm">Y</span>
+                        </div>
+                        <div class="d-flex flex-column justify-content-center align-items-center me-2">
+                            <input class="text-center form-control rounded-0" type="text" id="fourth" maxlength="1" />
+                            <span class="text-sm">Y</span>
+                        </div>
+                        <div class="d-flex flex-column justify-content-center align-items-center me-2">
+                            <input class="text-center form-control rounded-0" type="text" id="fifth" maxlength="1" />
+                            <span class="text-sm">N</span>
+                        </div>
+                        <div class="d-flex flex-column justify-content-center align-items-center me-2">
+                            <input class="text-center form-control rounded-0" type="text" id="sixth" maxlength="1" />
+                            <span class="text-sm">R</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 header_right d-flex justify-content-center align-items-center">
+                <img src="./img/logo.png" alt="" srcset="">
+            </div>
+        </div>
+    </header>
+
+    <main class="container p-4">
+        <div class="row gx-5">
+            <div class="col-9">
+                <div class="">
+                    <div class="d-flex align-items-end">
+                        <div class="icon me-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" style="width: 24px;height: 24px;">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+                            </svg>
+                        </div>
+                        <div class="">
+                            <h2 class="title">DOSSIER</h2>
+                            <div class="border-b"></div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="d-flex align-items-center pt-4">
+                    <div class="me-4">
+                        <span class="text-sm">Soort aanvraag:</span>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                        <label class="form-check-label text-sm" for="inlineCheckbox1">Nieuw</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                        <label class="form-check-label text-sm" for="inlineCheckbox2">Spoed</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                        <label class="form-check-label text-sm" for="inlineCheckbox3">Vernieuwen</label>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center pt-4">
+                    <div class="me-4">
+                        <span class="text-sm">Eerder zakaat bij ons aangevraagd?</span>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                            value="option1">
+                        <label class="form-check-label text-sm" for="inlineRadio1">Ja</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                            value="option2">
+                        <label class="form-check-label text-sm" for="inlineRadio2">Nee</label>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center pt-4">
+                    <div class="me-4">
+                        <span class="text-sm">Elders hulp aangevraagd? <br>
+                            Zo ja, vermeld de organisatienaam::</span>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                            value="option1">
+                        <label class="form-check-label text-sm" for="inlineRadio1">Ja</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                            value="option2">
+                        <label class="form-check-label text-sm" for="inlineRadio2">Nee</label>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center pt-4">
+                    <div class="me-4">
+                        <span class="text-sm">Organisatienaam:</span>
+                    </div>
+                    <input class="form-control rounded-0" type="text" aria-label="default input example">
+                </div>
+            </div>
+            <div class="col-3 d-flex justify-content-end">
+                <img src="./img/person.png"   style="border: 2px solid #8B7058;" class="rounded" alt="" srcset="">
+            </div>
+        </div>
+        <div class="row pt-4">
+            <div class="col-3 gap-4">
+                <span class="text-sm">Soort aanvraag:</span>
+            </div>
+            <div class="col-9 d-flex flex-wrap gap-3">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    <label class="form-check-label text-sm" for="inlineCheckbox1">Arme en behoeftige persoon</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                    <label class="form-check-label text-sm" for="inlineCheckbox2">Dekking kosten geneesmiddelen &
+                        behandeling</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                    <label class="form-check-label text-sm" for="inlineCheckbox3">Steun door handicap</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                    <label class="form-check-label text-sm" for="inlineCheckbox3">Weduwe/weeskinderen</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                    <label class="form-check-label text-sm" for="inlineCheckbox3">Noodlijdende reiziger</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                    <label class="form-check-label text-sm" for="inlineCheckbox3">Gevangene c.q. gezin</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                    <label class="form-check-label text-sm" for="inlineCheckbox3">Materiële hulp</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                    <label class="form-check-label text-sm" for="inlineCheckbox3">Aflossen schulden</label>
+                </div>
+            </div>
+        </div>
+        <div class="row pt-4">
+            <div class="col-3 gap-4">
+                <span class="text-sm">Beschrijving van situatie:</span>
+            </div>
+            <div class="col-9"><textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+        </div>
+        <div class="row pt-4">
+            <div class="col-4 gap-4">
+                <span class="text-sm">Is er sprake van dreigende huisuitzetting of
+                    afsluiting van energie</span>
+            </div>
+            <div class="col-8">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                        value="option1">
+                    <label class="form-check-label text-sm" for="inlineRadio1">Ja</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                        value="option2">
+                    <label class="form-check-label text-sm" for="inlineRadio2">Nee</label>
+                </div>
+            </div>
+        </div>
+        <div class="row pt-4">
+            <div class="col-4 gap-4">
+                <span class="text-sm">Hoe werd het geval gesignaleerd?</span>
+            </div>
+            <div class="col-8">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                        value="option1">
+                    <label class="form-check-label text-sm" for="inlineRadio1">Aanvrager</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                        value="option1">
+                    <label class="form-check-label text-sm" for="inlineRadio1">Organisatielid</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                        value="option2">
+                    <label class="form-check-label text-sm" for="inlineRadio2">Derde persoon</label>
+                </div>
+            </div>
+        </div>
+        <div class="row pt-4">
+            <div class="col-4 gap-4">
+                <span class="text-sm">Is de hulpvraag incidenteel of
+                    structureel?</span>
+            </div>
+            <div class="col-8">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                        value="option1">
+                    <label class="form-check-label text-sm" for="inlineRadio1">Eenmalig</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                        value="option2">
+                    <label class="form-check-label text-sm" for="inlineRadio2">Doorlopend</label>
+                </div>
+            </div>
+        </div>
+        <div class="row pt-4">
+            <div class="col-4 gap-4">
+                <span class="text-sm">Ik verklaar alles naar waarheid te
+                    hebben ingevuld</span>
+            </div>
+            <div class="col-8">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                        value="option1">
+                    <label class="form-check-label text-sm" for="inlineRadio1">Ja</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                        value="option2">
+                    <label class="form-check-label text-sm" for="inlineRadio2">Nee</label>
+                </div>
+            </div>
+        </div>
+        <div class="row pt-4 gx-5">
+            <div class="col-6">
+                <div class="row">
+                    <div class="col-3">
+                        <span class="text-sm">Organisatienaam:</span>
+                    </div>
+                    <div class="col-9">
+                        <input class="form-control rounded-0" type="text" aria-label="default input example">
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-3">
+                        <span class="text-sm">Datum</span>
+                    </div>
+                    <div class="col-9">
+                        <div id="otp" class="inputs d-flex flex-row justify-content-start">
+
+                            <input class="text-center form-control rounded-0 me-3" type="text" id="first"
+                                maxlength="1" />
+                            <input class="text-center form-control rounded-0 me-3" type="text" id="second"
+                                maxlength="1" />
+                            <input class="text-center form-control rounded-0 me-3" type="text" id="third"
+                                maxlength="1" />
+                            <input class="text-center form-control rounded-0 me-3" type="text" id="fourth"
+                                maxlength="1" />
+                            <input class="text-center form-control rounded-0 me-3" type="text" id="fifth"
+                                maxlength="1" />
+                            <input class="text-center form-control rounded-0 me-3" type="text" id="sixth"
+                                maxlength="1" />
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 ">
+                <div class="row">
+                    <div class="col-3">
+                        <span class="text-sm">Achternaam organisatielid:</span>
+                    </div>
+                    <div class="col-9">
+                        <input class="form-control rounded-0" type="text" aria-label="default input example">
+                    </div>
+                </div>
+                <div class="row mt-4">
+
+                    <div class="col-3">
+                        <span class="text-sm">Handtekening:</span>
+                    </div>
+                    <div class="col-9">
+                        <textarea class="form-control rounded-0" id="exampleFormControlTextarea1" rows="4"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-5 footer">
+            <div class="col-8 footer_left">
+                <h3 class="footer_text">VUL ALLE INFO ZO VOLLEDIG MOGELIJK IN</h3>
+            </div>
+            <div class="col-4 footer_right"></div>
+        </div>
+    </main>
+</body>
+
+</html>
