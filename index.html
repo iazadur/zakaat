@@ -13,11 +13,11 @@
 <body>
     <header class="container header">
         <div class="row">
-            <div class="col-8 header_left ps-0 pe-5">
+            <div class="col-lg-8 header_left ps-0 pe-lg-5">
                 <div class="">
                     <h1 class="zakaat_form_text m-0">Zakaat Form</h1>
                 </div>
-                <div class="d-flex justify-content-end align-items-start gap-3">
+                <div class="d-flex flex-md-row flex-column justify-content-end align-items-center align-items-md-start gap-3 mt-2 mt-lg-0">
                     <span class="text-sm">Dossiernummer: </span>
                     <div id="otp" class="inputs d-flex flex-row justify-content-end">
                         <div class="d-flex flex-column justify-content-center align-items-center me-2">
@@ -47,7 +47,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-4 header_right d-flex justify-content-center align-items-center">
+            <div class="col-lg-4 header_right d-flex justify-content-center align-items-center">
                 <img src="./img/logo.png" alt="" srcset="">
             </div>
         </div>
@@ -55,7 +55,7 @@
 
     <main class="container p-4">
         <div class="row gx-5">
-            <div class="col-9">
+            <div class="col-12 col-lg-8 order-1 order-lg-0">
                 <div class="">
                     <div class="d-flex align-items-end">
                         <div class="icon me-2">
@@ -72,7 +72,7 @@
 
                     </div>
                 </div>
-                <div class="d-flex align-items-center pt-4">
+                <div class="d-flex align-items-center flex-wrap flex-lg-nowrap pt-4">
                     <div class="me-4">
                         <span class="text-sm">Soort aanvraag:</span>
                     </div>
@@ -120,22 +120,27 @@
                         <label class="form-check-label text-sm" for="inlineRadio2">Nee</label>
                     </div>
                 </div>
-                <div class="d-flex align-items-center pt-4">
+                <div class="d-flex align-items-center pt-4 flex-wrap flex-lg-nowrap">
                     <div class="me-4">
                         <span class="text-sm">Organisatienaam:</span>
                     </div>
                     <input class="form-control rounded-0" type="text" aria-label="default input example">
                 </div>
             </div>
-            <div class="col-3 d-flex justify-content-end">
-                <img src="./img/person.png"   style="border: 2px solid #8B7058;" class="rounded" alt="" srcset="">
+            <div
+                class="col-12 col-lg-4 d-flex justify-content-center mb-lg-0 mb-4 flex-column flex-lg-row flex-wrap order-0 order-lg-1 justify-content-lg-end">
+                <img src="./img/person.png" width="250" style="border: 2px solid #8B7058;" class="rounded" alt=""
+                    srcset="">
+                <div class="mt-3" style="width: 250px;">
+                    <input class="form-control form-control-sm" id="formFileSm" type="file">
+                </div>
             </div>
         </div>
         <div class="row pt-4">
-            <div class="col-3 gap-4">
+            <div class="col-lg-3 gap-4">
                 <span class="text-sm">Soort aanvraag:</span>
             </div>
-            <div class="col-9 d-flex flex-wrap gap-3">
+            <div class="col-lg-9 d-flex flex-wrap gap-3">
                 <div class="form-check form-check-inline">
                     <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
                     <label class="form-check-label text-sm" for="inlineCheckbox1">Arme en behoeftige persoon</label>
@@ -171,19 +176,19 @@
                 </div>
             </div>
         </div>
-        <div class="row pt-4">
-            <div class="col-3 gap-4">
+        <div class="row pt-4 gap-2 gap-lg-0">
+            <div class="col-lg-3 gap-4">
                 <span class="text-sm">Beschrijving van situatie:</span>
             </div>
-            <div class="col-9"><textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            <div class="col-lg-9"><textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
             </div>
         </div>
         <div class="row pt-4">
-            <div class="col-4 gap-4">
+            <div class="col-lg-4 gap-4">
                 <span class="text-sm">Is er sprake van dreigende huisuitzetting of
                     afsluiting van energie</span>
             </div>
-            <div class="col-8">
+            <div class="col-lg-8">
                 <div class="form-check form-check-inline">
                     <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
                         value="option1">
@@ -197,10 +202,10 @@
             </div>
         </div>
         <div class="row pt-4">
-            <div class="col-4 gap-4">
+            <div class="col-lg-4 gap-4">
                 <span class="text-sm">Hoe werd het geval gesignaleerd?</span>
             </div>
-            <div class="col-8">
+            <div class="col-lg-8">
                 <div class="form-check form-check-inline">
                     <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
                         value="option1">
@@ -219,11 +224,11 @@
             </div>
         </div>
         <div class="row pt-4">
-            <div class="col-4 gap-4">
+            <div class="col-lg-4 gap-4">
                 <span class="text-sm">Is de hulpvraag incidenteel of
                     structureel?</span>
             </div>
-            <div class="col-8">
+            <div class="col-lg-8">
                 <div class="form-check form-check-inline">
                     <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
                         value="option1">
@@ -237,11 +242,11 @@
             </div>
         </div>
         <div class="row pt-4">
-            <div class="col-4 gap-4">
+            <div class="col-lg-4 gap-4">
                 <span class="text-sm">Ik verklaar alles naar waarheid te
                     hebben ingevuld</span>
             </div>
-            <div class="col-8">
+            <div class="col-lg-8">
                 <div class="form-check form-check-inline">
                     <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
                         value="option1">
@@ -255,20 +260,20 @@
             </div>
         </div>
         <div class="row pt-4 gx-5">
-            <div class="col-6">
+            <div class="col-lg-6">
                 <div class="row">
-                    <div class="col-3">
+                    <div class="col-lg-3">
                         <span class="text-sm">Organisatienaam:</span>
                     </div>
-                    <div class="col-9">
+                    <div class="col-lg-9">
                         <input class="form-control rounded-0" type="text" aria-label="default input example">
                     </div>
                 </div>
                 <div class="row mt-4">
-                    <div class="col-3">
+                    <div class="col-lg-3">
                         <span class="text-sm">Datum</span>
                     </div>
-                    <div class="col-9">
+                    <div class="col-lg-9">
                         <div id="otp" class="inputs d-flex flex-row justify-content-start">
 
                             <input class="text-center form-control rounded-0 me-3" type="text" id="first"
@@ -289,33 +294,38 @@
                     </div>
                 </div>
             </div>
-            <div class="col-6 ">
+            <div class="col-lg-6 ">
                 <div class="row">
-                    <div class="col-3">
+                    <div class="col-lg-3">
                         <span class="text-sm">Achternaam organisatielid:</span>
                     </div>
-                    <div class="col-9">
+                    <div class="col-lg-9">
                         <input class="form-control rounded-0" type="text" aria-label="default input example">
                     </div>
                 </div>
                 <div class="row mt-4">
 
-                    <div class="col-3">
+                    <div class="col-lg-3">
                         <span class="text-sm">Handtekening:</span>
                     </div>
-                    <div class="col-9">
+                    <div class="col-lg-9">
                         <textarea class="form-control rounded-0" id="exampleFormControlTextarea1" rows="4"></textarea>
                     </div>
                 </div>
             </div>
         </div>
-
+        <div class="d-flex justify-content-between align-items-center mt-4">
+            <button class="btn-next">Previews</button>
+            <button class="btn-next">next</button>
+        </div>
         <div class="row mt-5 footer">
-            <div class="col-8 footer_left">
+            <div class="col-lg-8 footer_left">
                 <h3 class="footer_text">VUL ALLE INFO ZO VOLLEDIG MOGELIJK IN</h3>
             </div>
-            <div class="col-4 footer_right"></div>
+            <div class="col-lg-4 footer_right"></div>
         </div>
+
+
     </main>
 </body>
 

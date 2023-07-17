@@ -94,7 +94,6 @@ input[type=number]::-webkit-outer-spin-button {
 
 .footer {
     height: 60px;
-    ;
 }
 
 .footer_left {
@@ -113,4 +112,87 @@ input[type=number]::-webkit-outer-spin-button {
 .footer_right {
     clip-path: polygon(6% 0, 100% 0, 100% 100%, 0 100%);
     background-color: #CABDB4;
+}
+
+.btn-next {
+    color: #fff;
+    background-color: #801849;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 18px;
+}
+
+/* responsive max 375px  */
+
+@media screen and (max-width: 420px) {
+    .header {
+        height: auto;
+        /* background-color: #CABDB4; */
+    }
+
+    .header_left {
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+        background-color: #CABDB4;
+    }
+
+    .header_right {
+        clip-path: polygon(0% 0, 100% 0, 100% 100%, 0 100%);
+        background-color: #CABDB4;
+        margin-top: -1px;
+    }
+
+    .footer_left {
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+        background-color: #801849;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer_text {
+        color: #fff;
+        letter-spacing: 2px;
+        font-size: 12px;
+    }
+
+    .footer_right {
+        display: none;
+        background-color: #CABDB4;
+    }
+}
+@media screen and (max-width: 991px) {
+    .header {
+        height: auto;
+        /* background-color: #CABDB4; */
+    }
+
+    .header_left {
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+        background-color: #CABDB4;
+    }
+
+    .header_right {
+        clip-path: polygon(0% 0, 100% 0, 100% 100%, 0 100%);
+        background-color: #CABDB4;
+        margin-top: -1px;
+    }
+
+    .footer_left {
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+        background-color: #801849;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer_text {
+        color: #fff;
+        letter-spacing: 2px;
+        font-size: 12px;
+    }
+
+    .footer_right {
+        display: none;
+        background-color: #CABDB4;
+    }
 }
